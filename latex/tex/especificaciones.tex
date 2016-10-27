@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  El informe no podrá exceder las 25 páginas   %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Resumen de los requerimientos\label{sec:Requerimientos}}
+
+ Para poder realizar un mejor análisis de la documentación de las mediciones que se detallarán más adelante, se relevan los requerimientos expuestos en el anteproyecto del dispositivo.
+
+  \subsection{Requerimientos del usuario}
+
+ \begin{itemize}
+
+% \item Conocimiento de las capacidades del dispositivo.%no lo entendí
+
+ \item Que el dispositivo tenga un manejo intuitivo.%Comando intuitivo del dispositivo.
+
+% \item Conocimiento del estado actual del dispositivo. %no lo entendí
+ \item Que el control de potencia responda en tiempo real.
+ \item Que la comunicación sea transparente al usuario.
+ \item Que la comunicación no interfiera con otros dispositivos, conectados o no a la red eléctrica.
+
+ \end{itemize}
+
+ \subsection{Requerimientos técnicos}
+
+ \begin{itemize}
+
+ \item Velocidad de comunicación: la tasa de transferencia de datos debe permitir un control que aparente ser de tiempo real para el usuario.
+
+ \item Protocolo de comunicación: el protocolo de comunicación debe soportar una comunicación simple en el medio previsto, de baja tasa de transferencia pero con una buena confiabilidad.
+
+ \item Distancia máxima de comunicación: la distancia máxima entre emisor y receptor será del orden de las distancias máximas entre tomas en una instalación hogareña o en un taller o pequeña industria. 
+
+ \item Potencia máxima de salida: la carga máxima a controlar será una carga típica encontrada en el hogar o en la industria liviana, como motores y artefactos comunes.
+ 
+ \item Compatibilidad con la red eléctrica argentina de baja tensión.
+ 
+ \item Aislación mecánica para mejorar la seguridad eléctrica.
+
+\item Funcionamiento del circuito conectado en fase o en contrafase a la red indistintamente
+
+
+ \end{itemize}
+
+\section{Especificaciones}
+Éstas son las especificaciones del dispositivo que fueron documentados en el anteproyecto del dispositivo.
+
+% \subsection{Especificaciones de usuario}
+
+%  \begin{itemize}
+
+%  \item El transmisor se controlará con un potenciometro con la finalidad de poder regular la carga a distancia
+ 
+%  \item Se espera una rápida respuesta del controlador.
+ 
+%  \item El objetivo es que tanto el transmisor como el receptor se puedan conectar al toma-corriente de la instalación.
+
+
+%  \end{itemize}
+
+\subsection{Especificaciones técnicas funcionales} \label{ETF}
+Se esperan cumplir o superar las siguientes especificaciones técnicas: 
+\begin{center}
+\begin{tabular}{| c | c |}
+      	\hline
+		Parámetro & Valor \\
+        \hline
+        \hline
+        Mínima distancia de conexionado & 5 metros \\
+        Máximo retardo en la aplicación del comando & 1 segundo \\
+        Mínima cantidad de estados dimerizados & 4 estados \\
+        Máxima amplitud de tensión inyectada & 5 V \\
+        
+        \hline
+\end{tabular}
+\end{center}
+
+\subsection{Especificaciones de diseño circuital} 
+
+Las especificaciones de diseño circuital que se deben cumplir para cubrir los requerimientos técnicos son las siguientes:
+
+\begin{center}
+\begin{tabular}{| c | c |}
+      	\hline
+		Parámetro & Valor \\
+        \hline
+        \hline        
+        Potencia de control en la carga & 600 W \\
+        Tensión de línea de trabajo & 220 V \\
+        Frecuencia de línea de trabajo & 50 Hz \\
+        % Rellenen como se les plazca
+        
+                
+        \hline
+\end{tabular}
+\end{center}

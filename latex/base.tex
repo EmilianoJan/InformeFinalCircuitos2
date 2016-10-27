@@ -1,0 +1,71 @@
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Trabajo Práctico en formato paper
+% Template LaTeX
+% Version 2 (octubre 2014)
+%
+% Basado en:
+% Template original de
+% http://www.LaTeXTemplates.com
+% Por:
+% Frits Wenneker (http://www.howtotex.com)
+% Editado por Mariela J. (FCEyN UBA) 04/02/2014
+% Adaptado para Trabajos Prácticos por Martín C. (FI UBA) 04/10/2014
+% Modularización según 
+%  https://en.wikibooks.org/wiki/LaTeX/Modular_Documents
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Para agregar contenido, editar el archivo tex/sections.tex
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[twoside]{article}
+\usepackage{graphicx}
+\usepackage{ifpdf}
+\usepackage{longtable}
+\ifpdf
+   % put here packages only for the PDF:
+   \DeclareGraphicsExtensions{.pdf,.png,.jpg,.mps}
+   \usepackage{hyperref} 
+\else
+   % put here packages only for the DVI:
+\fi
+ 
+% put all the other packages here:
+% Coloco los links pero sin el recuadro rojo espantoso.
+\usepackage{mystyle}
+\hypersetup{
+    bookmarksnumbered=true,     
+    bookmarksopen=true,         
+    bookmarksopenlevel=1,       
+    colorlinks=true,
+    linkcolor=black,            
+    pdfstartview=Fit,           
+    pdfpagemode=UseOutlines,    % this is the option you were lookin for
+    pdfpagelayout=TwoPageRight
+}
+
+% Macros para caratula
+\input{./tex/definitions.tex}
+ 
+\begin{document}
+ 
+\pagenumbering{roman}
+ 
+\input{./tex/caratula.tex}
+
+\tableofcontents
+\listoffigures
+%\listoftables
+\newpage
+
+\pagenumbering{arabic}
+ 
+\input{./tex/paper.tex}
+ 
+\end{document}

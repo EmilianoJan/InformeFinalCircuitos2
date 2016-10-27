@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Trabajo Práctico en formato paper
+% Template LaTeX
+% Version 2 (octubre 2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Editado por Mariela J. (FCEyN UBA) 04/02/2014
+% Adaptado para Trabajos Prácticos por Martín C. (FI UBA) 04/10/2014
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\begin{center}
+\title{\vspace{-15mm}\fontsize{18pt}{12pt}\selectfont\textbf{\titulo}} % Article title
+
+\author{
+\large
+\textsc{ \autorA, \autorC, \autorD, \autorE, \autorF } \\ [2mm] %  Autores. Van entre comas y en orden alfabético
+\normalsize \institucion \\ % Your institution. Filiación
+\small \href{mailto:\emailA}{\nicemailA}, \href{mailto:\emailC}{\nicemailC}, \href{mailto:\emailD}{\nicemailD}, \href{mailto:\emailE}{\nicemailE}, \href{mailto:\emailF}{\nicemailF} % Your email address
+\vspace{+5mm}
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+%\begin{document}
+
+\maketitle % Insert title
+\end{center}
+\thispagestyle{fancy} % All pages have headers and footers
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+
+\input{./tex/abstract.tex}
+
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\begin{multicols}{2} % Two-column layout throughout the main article text
+
+\input{./tex/objetivos.tex}
+\input{./tex/especificaciones.tex}
+\input{./tex/diseno.tex}
+%\input{./tex/materiales.tex}
+\input{./tex/conexionado.tex}
+\input{./tex/banco.tex}
+\input{./tex/conclusiones.tex}
+\input{./tex/anexo.tex}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\input{./tex/bibliography.tex}
+
+%----------------------------------------------------------------------------------------
+
+%\end{multicols}
+
+%\end{document}

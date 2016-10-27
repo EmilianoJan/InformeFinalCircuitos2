@@ -1,0 +1,64 @@
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt,a4paper]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+%----------- Agregados de codificación en español y otros paquetes -----------
+\usepackage[spanish]{babel}% idioma castellano
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}% esto es para poder poner los tildes directamente. Puede que cambie de versión a versión de sistema operativos (más información en http://www.aq.upm.es/Departamentos/Fisica/agmartin/webpublico/latex/FAQ-CervanTeX/FAQ-CervanTeX-6.html )
+\usepackage{graphicx} % para insertar figuras
+\usepackage{subfigure} % para insertar figuras dentro de figuras
+\usepackage{times} % plataforma
+\usepackage{amsmath} % --para ecuaciones y algunos símbolos 
+\usepackage{nicefrac}
+\usepackage{epstopdf}
+% ---------------------- -----------------------------------------------------
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\addto\captionsspanish{ % Modifica algunos nombres cambiandolos por los definidos a continuacion
+        \def\contentsname{\'Indice}%
+        \def\bibname{Referencias}%
+        \def\tablename{Tabla}%
+        \def\abstractname{Resumen}
+        }
+
+\usepackage{titlesec} % Allows customization of titles
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+
+%\usepackage{pdfpages}
+%\usepackage{caption}
+%\usepackage{subcaption}
+%\usepackage{multicol}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{listings} 
+%\usepackage{anysize}
+%\usepackage{calligra} 
+
+\newcommand{\parametro}[4]{
+#1 = \dfrac{#2}{#3} \vrule_{#4 = 0} %\vert_{#4 = 0} %\right\vert_{#4 = 0}
+}
+
+% Marcadores de footnotes:
+    \makeatletter
+    %para símbolos:
+%    \renewcommand*{\@fnsymbol}[1]{\ensuremath{\ifcase#1\or *\or \dagger\or \ddagger\or
+%       \mathsection\or \mathparagraph\or \|\or **\or \dagger\dagger
+%       \or \ddagger\ddagger \else\@ctrerr\fi}}
+% para números:
+\let\@fnsymbol\@arabic
+    \makeatother
